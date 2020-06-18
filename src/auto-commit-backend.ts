@@ -5,10 +5,9 @@ let modifiedGitFiles: string[] = [];
 let commitLock: boolean = false;
 let timeoutInterval: number = 5000; // miliseconds
 let interval: any = null;
+let pluginInitialized: boolean = false;
 
 export async function start(context: theia.PluginContext) {
-    let pluginInitialized: boolean;
-
     const onChange = () => {
         if (!pluginInitialized) {
             pluginInitialized = true;
