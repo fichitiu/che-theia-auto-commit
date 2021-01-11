@@ -3,7 +3,7 @@ import * as process from 'child_process';
 
 let modifiedGitFiles: string[] = [];
 let commitLock: boolean = false;
-let timeoutInterval: number = 5000123; // miliseconds
+let timeoutInterval: number = 5000; // miliseconds
 let interval: any = null;
 let pluginInitialized: boolean = false;
 
